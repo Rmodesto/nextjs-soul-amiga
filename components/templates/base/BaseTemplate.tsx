@@ -1,9 +1,9 @@
-export interface IBaseTemplate {
-  sampleTextProp: string;
-}
+import styles from './BaseTemplate.module.css';
+
+export interface IBaseTemplate {}
 
 const BaseTemplate: React.FC<IBaseTemplate> = () => {
-  return <div>Hello world!</div>;
+  return <div className={styles.container}>Hello world!</div>;
 };
 
 export default BaseTemplate;
